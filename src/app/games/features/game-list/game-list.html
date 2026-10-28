@@ -1,0 +1,20 @@
+<div class="filter">
+    <label >
+        Filtrar por categoria
+        <select #sel (change)="filterByCategory(sel.value)">
+            <option value=""></option>
+            <option value="Aventura">Aventura</option>
+            <option value="Metroidvania">Metroidvania</option>
+            <option value="Deportes">Deportes</option>
+            <option value="Simulación">Simulacion</option>
+            <option value="RPG">Rpg</option>
+        </select>
+    </label>
+</div>
+
+<div class="main-list">
+
+    @for (g of filteredGames(); track g.id) {
+    <app-game-card [game]="g"></app-game-card>
+    }
+</div>

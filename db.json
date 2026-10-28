@@ -1,0 +1,45 @@
+{
+  "games": [
+    {
+      "id": "1",
+      "name": "The Legend of Zelda: Breath of the Wild",
+      "category": "Aventura",
+      "description": "Explorá un vasto mundo abierto lleno de puzzles, secretos y combates en esta aventura épica.",
+      "price": 59.99,
+      "onSale": true
+    },
+    {
+      "id": "2",
+      "name": "Hollow Knight",
+      "category": "Metroidvania",
+      "description": "Un desafiante juego de acción y exploración en un reino subterráneo de insectos y caballeros.",
+      "price": 14.99,
+      "onSale": true
+    },
+    {
+      "id": "g-003",
+      "name": "FC 25",
+      "category": "Deportes",
+      "description": "Simulador de fútbol con equipos, ligas y modos online actualizados.",
+      "price": 69.99,
+      "onSale": false
+    },
+    {
+      "id": "g-004",
+      "name": "Stardew Valley",
+      "category": "Simulación",
+      "description": "Heredá una granja, cultivá la tierra, criá animales y construí relaciones con el pueblo.",
+      "price": 13.99,
+      "onSale": true
+    },
+    {
+      "id": "5",
+      "name": "Elden Ring",
+      "category": "RPG",
+      "description": "Un RPG de acción en un mundo oscuro y abierto, creado por FromSoftware y George R. R. Martin.",
+      "price": 49.99,
+      "onSale": true
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

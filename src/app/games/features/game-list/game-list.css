@@ -1,0 +1,24 @@
+.main-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columnas, 1 tarjeta por columna */
+    gap: 1.5rem;
+    max-width: 60%;
+    /* limita el ancho total */
+    margin: 0 auto;
+    /* centra el contenedor: los costados quedan vacíos */
+    padding: 1rem;
+}
+
+:host {
+  display: block;        /* los componentes son inline por defecto */
+  min-height: 100vh;     /* para que cubra toda la pantalla hacia abajo */
+  background-color: #d1d1d1;  /* el color que quieras */
+}
+
+.filter{
+  max-width: 61%;
+  margin: 0 auto;
+  padding: 1rem 1rem 0;  /* el mismo padding lateral que .main-list */
+  box-sizing: border-box;
+}

@@ -1,0 +1,38 @@
+:host {
+    width: 80%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    gap: 1rem;
+    width: 100%;
+    max-width: 60vw;
+    padding: 1rem;
+    margin: 0 auto;
+}
+
+label{
+    display: grid;
+    grid-template-columns: 5rem 1fr;
+    align-items: center;
+}
+
+input:not([type="checkbox"]),
+select {
+    flex: 1;           /* ocupa todo el espacio que deja el texto */
+    padding: 0.4rem;
+}
+
+input[type="checkbox"]{
+    justify-self: start;
+    margin: 0;
+}
+
+.form-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+}

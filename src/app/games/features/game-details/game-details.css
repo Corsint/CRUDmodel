@@ -1,0 +1,19 @@
+article{
+    border: 0.2rem solid greenyellow;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    background-color: white;
+    height: 100%;
+    box-sizing: border-box;
+    width: 50%;
+    margin: 2rem auto;
+}
+
+.detail-buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}

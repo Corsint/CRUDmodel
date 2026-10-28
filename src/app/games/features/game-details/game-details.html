@@ -1,0 +1,25 @@
+@let g = game()!;
+<article>
+    <h2>{{g.name}}</h2>
+    <p>Categoria: {{g.category}}</p>
+    <p>{{g.description}}</p>
+    <p>Precio: ${{g.price}}</p>
+    @if (g.onSale) {
+    <p>En promocion</p>
+    }
+
+    <div class="detail-buttons">
+        @if (!editing()) {
+        <button type="button" (click)="this.editing.set(true)">Editar</button>
+        }
+        <button type="button" (click)="deleteGame(g.id)">Eliminar</button>
+    </div>
+
+    @if (editing()) {
+        <app-game-form
+        [gameToEdit]="g"
+        (gameEdited)="onEdited($event)"
+        (cancel)="this.editing.set(false)"
+        ></app-game-form>
+    }
+</article>

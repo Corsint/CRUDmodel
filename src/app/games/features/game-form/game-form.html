@@ -1,0 +1,35 @@
+<form [formGroup]="gameForm" (ngSubmit)="submitGame()">
+    <label>
+        Nombre
+        <input formControlName="name">
+    </label>
+    <label>
+        Categoria
+        <select formControlName="category">
+            <option value="Aventura">Aventura</option>
+            <option value="Metroidvania">Metroidvania</option>
+            <option value="Deportes">Deportes</option>
+            <option value="Simulacion">Simulacion</option>
+            <option value="Rpg">Rpg</option>
+        </select>
+    </label>
+    <label>
+        Descripcion
+        <input formControlName="description">
+    </label>
+    <label>
+        En oferta
+        <input formControlName="onSale" type="checkbox">
+    </label>
+
+
+    <div class="form-buttons">
+        <button type="submit">{{gameToEdit() ? 'Guardar cambios' : 'Añadir'}}</button>
+        @if(gameToEdit()){
+        <button type="button" (click)="cancel.emit()">Cancelar</button>
+        }@else {
+        <button type="button" routerLink="/games">Volver</button>
+        }
+    </div>
+
+</form>

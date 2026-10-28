@@ -1,0 +1,11 @@
+@let g = game()!;
+
+<article>
+    <h2>{{g.name}}</h2>
+    <p>Categoria: {{g.category}}</p>
+    <p>Precio: ${{g.price}}</p>
+    @if (g.onSale) {
+        <p>En promocion
+    }
+    <button type="button" (click)="goToDetails(g.id)">Ver detalles</button>
+</article>
